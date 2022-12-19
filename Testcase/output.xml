@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221219 13:16:17.223" rpa="false" schemaversion="3">
+<suite id="s1" name="Dropdown" source="C:\Users\jagatheswaran.m\PycharmProjects\RobotFramework\Testcase\dropdown.robot">
+<test id="s1-t1" name="TC1" line="11">
+<kw name="Launch brow">
+<var>${pt}</var>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${broswe2}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221219 13:16:17.565" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20221219 13:16:17.565" endtime="20221219 13:16:21.115"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221219 13:16:21.116" endtime="20221219 13:16:21.247"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20221219 13:16:21.261" level="INFO">${title} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20221219 13:16:21.247" endtime="20221219 13:16:21.262"/>
+</kw>
+<msg timestamp="20221219 13:16:21.262" level="INFO">${pt} = nopCommerce demo store</msg>
+<status status="PASS" starttime="20221219 13:16:17.564" endtime="20221219 13:16:21.263"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pt}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221219 13:16:21.263" endtime="20221219 13:16:21.263"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221219 13:16:21.263" level="INFO">Clicking element 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20221219 13:16:21.263" endtime="20221219 13:16:22.969"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:Email</arg>
+<arg>Jaga</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 13:16:22.969" level="INFO">Typing text 'Jaga' into text field 'name:Email'.</msg>
+<status status="PASS" starttime="20221219 13:16:22.969" endtime="20221219 13:16:23.211"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:Password</arg>
+<arg>tesing12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 13:16:23.212" level="INFO">Typing text 'tesing12' into text field 'name:Password'.</msg>
+<status status="PASS" starttime="20221219 13:16:23.211" endtime="20221219 13:16:23.420"/>
+</kw>
+<status status="PASS" starttime="20221219 13:16:17.564" endtime="20221219 13:16:23.422"/>
+</test>
+<status status="PASS" starttime="20221219 13:16:17.232" endtime="20221219 13:16:23.423"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Dropdown">Dropdown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
