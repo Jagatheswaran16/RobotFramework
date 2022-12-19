@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221219 13:28:24.080" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221219 13:39:06.907" rpa="false" schemaversion="3">
 <suite id="s1" name="My Register" source="C:\Users\jagatheswaran.m\PycharmProjects\RobotFramework\Register\my_register.robot">
 <test id="s1-t1" name="test1" line="10">
 <kw name="my browser" library="RegisterPOM">
@@ -9,14 +9,14 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221219 13:28:24.410" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/register.php'.</msg>
-<status status="PASS" starttime="20221219 13:28:24.410" endtime="20221219 13:28:28.646"/>
+<msg timestamp="20221219 13:39:07.275" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/register.php'.</msg>
+<status status="PASS" starttime="20221219 13:39:07.275" endtime="20221219 13:39:12.495"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221219 13:28:28.646" endtime="20221219 13:28:28.787"/>
+<status status="PASS" starttime="20221219 13:39:12.496" endtime="20221219 13:39:12.675"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:24.409" endtime="20221219 13:28:28.788"/>
+<status status="PASS" starttime="20221219 13:39:07.273" endtime="20221219 13:39:12.676"/>
 </kw>
 <kw name="Enter firstname" library="RegisterPOM">
 <arg>Jagathes</arg>
@@ -24,10 +24,10 @@
 <arg>${Firstname}</arg>
 <arg>${my_firstname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:28.792" level="INFO">Typing text 'Jagathes' into text field 'name:firstName'.</msg>
-<status status="PASS" starttime="20221219 13:28:28.788" endtime="20221219 13:28:29.078"/>
+<msg timestamp="20221219 13:39:12.683" level="INFO">Typing text 'Jagathes' into text field 'name:firstName'.</msg>
+<status status="PASS" starttime="20221219 13:39:12.680" endtime="20221219 13:39:13.038"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:28.788" endtime="20221219 13:28:29.078"/>
+<status status="PASS" starttime="20221219 13:39:12.678" endtime="20221219 13:39:13.038"/>
 </kw>
 <kw name="Enter lastname" library="RegisterPOM">
 <arg>M</arg>
@@ -35,10 +35,10 @@
 <arg>${Lastname}</arg>
 <arg>${my_lastname}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:29.078" level="INFO">Typing text 'M' into text field 'name:lastName'.</msg>
-<status status="PASS" starttime="20221219 13:28:29.078" endtime="20221219 13:28:29.567"/>
+<msg timestamp="20221219 13:39:13.044" level="INFO">Typing text 'M' into text field 'name:lastName'.</msg>
+<status status="PASS" starttime="20221219 13:39:13.041" endtime="20221219 13:39:13.559"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:29.078" endtime="20221219 13:28:29.567"/>
+<status status="PASS" starttime="20221219 13:39:13.039" endtime="20221219 13:39:13.559"/>
 </kw>
 <kw name="enter phone" library="RegisterPOM">
 <arg>909099090909</arg>
@@ -46,10 +46,10 @@
 <arg>${phone}</arg>
 <arg>${my_phone}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:29.569" level="INFO">Typing text '909099090909' into text field 'name:phone'.</msg>
-<status status="PASS" starttime="20221219 13:28:29.568" endtime="20221219 13:28:30.017"/>
+<msg timestamp="20221219 13:39:13.562" level="INFO">Typing text '909099090909' into text field 'name:phone'.</msg>
+<status status="PASS" starttime="20221219 13:39:13.560" endtime="20221219 13:39:13.772"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:29.568" endtime="20221219 13:28:30.017"/>
+<status status="PASS" starttime="20221219 13:39:13.560" endtime="20221219 13:39:13.773"/>
 </kw>
 <kw name="Enter Email" library="RegisterPOM">
 <arg>Jaga@12.com</arg>
@@ -57,10 +57,10 @@
 <arg>${Email}</arg>
 <arg>${my_email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:30.024" level="INFO">Typing text 'Jaga@12.com' into text field 'name:userName'.</msg>
-<status status="PASS" starttime="20221219 13:28:30.021" endtime="20221219 13:28:30.373"/>
+<msg timestamp="20221219 13:39:13.773" level="INFO">Typing text 'Jaga@12.com' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20221219 13:39:13.773" endtime="20221219 13:39:14.000"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:30.020" endtime="20221219 13:28:30.374"/>
+<status status="PASS" starttime="20221219 13:39:13.773" endtime="20221219 13:39:14.000"/>
 </kw>
 <kw name="Enter Add" library="RegisterPOM">
 <arg>12,tatashowrom,erode</arg>
@@ -68,10 +68,10 @@
 <arg>${Address}</arg>
 <arg>${my_addr}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:30.375" level="INFO">Typing text '12,tatashowrom,erode' into text field 'name:address1'.</msg>
-<status status="PASS" starttime="20221219 13:28:30.375" endtime="20221219 13:28:30.631"/>
+<msg timestamp="20221219 13:39:14.001" level="INFO">Typing text '12,tatashowrom,erode' into text field 'name:address1'.</msg>
+<status status="PASS" starttime="20221219 13:39:14.001" endtime="20221219 13:39:14.231"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:30.375" endtime="20221219 13:28:30.631"/>
+<status status="PASS" starttime="20221219 13:39:14.001" endtime="20221219 13:39:14.231"/>
 </kw>
 <kw name="Enter city" library="RegisterPOM">
 <arg>BLR</arg>
@@ -79,10 +79,10 @@
 <arg>${City}</arg>
 <arg>${my_city}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:30.637" level="INFO">Typing text 'BLR' into text field 'name:city'.</msg>
-<status status="PASS" starttime="20221219 13:28:30.631" endtime="20221219 13:28:31.098"/>
+<msg timestamp="20221219 13:39:14.232" level="INFO">Typing text 'BLR' into text field 'name:city'.</msg>
+<status status="PASS" starttime="20221219 13:39:14.232" endtime="20221219 13:39:14.437"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:30.631" endtime="20221219 13:28:31.098"/>
+<status status="PASS" starttime="20221219 13:39:14.231" endtime="20221219 13:39:14.438"/>
 </kw>
 <kw name="Enter State" library="RegisterPOM">
 <arg>Karanataka</arg>
@@ -90,10 +90,10 @@
 <arg>${State}</arg>
 <arg>${my_state}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:31.103" level="INFO">Typing text 'Karanataka' into text field 'name:state'.</msg>
-<status status="PASS" starttime="20221219 13:28:31.098" endtime="20221219 13:28:31.403"/>
+<msg timestamp="20221219 13:39:14.443" level="INFO">Typing text 'Karanataka' into text field 'name:state'.</msg>
+<status status="PASS" starttime="20221219 13:39:14.440" endtime="20221219 13:39:14.767"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:31.098" endtime="20221219 13:28:31.404"/>
+<status status="PASS" starttime="20221219 13:39:14.439" endtime="20221219 13:39:14.768"/>
 </kw>
 <kw name="Enter postalcode" library="RegisterPOM">
 <arg>765767</arg>
@@ -101,10 +101,10 @@
 <arg>${Postalcode}</arg>
 <arg>${my_postalcode}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:31.408" level="INFO">Typing text '765767' into text field 'name:postalCode'.</msg>
-<status status="PASS" starttime="20221219 13:28:31.408" endtime="20221219 13:28:31.698"/>
+<msg timestamp="20221219 13:39:14.773" level="INFO">Typing text '765767' into text field 'name:postalCode'.</msg>
+<status status="PASS" starttime="20221219 13:39:14.771" endtime="20221219 13:39:15.077"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:31.406" endtime="20221219 13:28:31.698"/>
+<status status="PASS" starttime="20221219 13:39:14.770" endtime="20221219 13:39:15.078"/>
 </kw>
 <kw name="Enter country" library="RegisterPOM">
 <arg>INDIA</arg>
@@ -112,10 +112,10 @@
 <arg>${Country}</arg>
 <arg>${my_country}</arg>
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20221219 13:28:31.698" level="INFO">Selecting options from selection list 'name:country' by value INDIA.</msg>
-<status status="PASS" starttime="20221219 13:28:31.698" endtime="20221219 13:28:31.862"/>
+<msg timestamp="20221219 13:39:15.080" level="INFO">Selecting options from selection list 'name:country' by value INDIA.</msg>
+<status status="PASS" starttime="20221219 13:39:15.080" endtime="20221219 13:39:15.297"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:31.698" endtime="20221219 13:28:31.862"/>
+<status status="PASS" starttime="20221219 13:39:15.080" endtime="20221219 13:39:15.298"/>
 </kw>
 <kw name="Enter username" library="RegisterPOM">
 <arg>Jags</arg>
@@ -123,10 +123,10 @@
 <arg>${Username}</arg>
 <arg>${my_username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:31.862" level="INFO">Typing text 'Jags' into text field 'name:email'.</msg>
-<status status="PASS" starttime="20221219 13:28:31.862" endtime="20221219 13:28:32.132"/>
+<msg timestamp="20221219 13:39:15.299" level="INFO">Typing text 'Jags' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20221219 13:39:15.299" endtime="20221219 13:39:15.440"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:31.862" endtime="20221219 13:28:32.132"/>
+<status status="PASS" starttime="20221219 13:39:15.298" endtime="20221219 13:39:15.440"/>
 </kw>
 <kw name="Enter password" library="RegisterPOM">
 <arg>Jagathemax123332</arg>
@@ -134,10 +134,10 @@
 <arg>${Password}</arg>
 <arg>${my_password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:32.138" level="INFO">Typing text 'Jagathemax123332' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20221219 13:28:32.132" endtime="20221219 13:28:32.445"/>
+<msg timestamp="20221219 13:39:15.443" level="INFO">Typing text 'Jagathemax123332' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20221219 13:39:15.442" endtime="20221219 13:39:15.558"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:32.132" endtime="20221219 13:28:32.445"/>
+<status status="PASS" starttime="20221219 13:39:15.442" endtime="20221219 13:39:15.558"/>
 </kw>
 <kw name="Enter confirmpassword" library="RegisterPOM">
 <arg>Jagathemax123332</arg>
@@ -145,23 +145,27 @@
 <arg>${ConfirmationPassword}</arg>
 <arg>${my_confirmpassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:32.445" level="INFO">Typing text 'Jagathemax123332' into text field 'name:confirmPassword'.</msg>
-<status status="PASS" starttime="20221219 13:28:32.445" endtime="20221219 13:28:32.676"/>
+<msg timestamp="20221219 13:39:15.561" level="INFO">Typing text 'Jagathemax123332' into text field 'name:confirmPassword'.</msg>
+<status status="PASS" starttime="20221219 13:39:15.560" endtime="20221219 13:39:15.698"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:32.445" endtime="20221219 13:28:32.676"/>
+<status status="PASS" starttime="20221219 13:39:15.559" endtime="20221219 13:39:15.698"/>
 </kw>
 <kw name="Enter submit" library="RegisterPOM">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221219 13:28:32.679" level="INFO">Clicking element 'submit'.</msg>
-<status status="PASS" starttime="20221219 13:28:32.678" endtime="20221219 13:28:34.529"/>
+<msg timestamp="20221219 13:39:15.700" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20221219 13:39:15.698" endtime="20221219 13:39:17.590"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:32.676" endtime="20221219 13:28:34.530"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221219 13:39:17.590" endtime="20221219 13:39:19.830"/>
 </kw>
-<status status="PASS" starttime="20221219 13:28:24.408" endtime="20221219 13:28:34.530"/>
+<status status="PASS" starttime="20221219 13:39:15.698" endtime="20221219 13:39:19.830"/>
+</kw>
+<status status="PASS" starttime="20221219 13:39:07.272" endtime="20221219 13:39:19.832"/>
 </test>
-<status status="PASS" starttime="20221219 13:28:24.084" endtime="20221219 13:28:34.530"/>
+<status status="PASS" starttime="20221219 13:39:06.917" endtime="20221219 13:39:19.836"/>
 </suite>
 <statistics>
 <total>

@@ -1,59 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221219 13:16:17.223" rpa="false" schemaversion="3">
-<suite id="s1" name="Dropdown" source="C:\Users\jagatheswaran.m\PycharmProjects\RobotFramework\Testcase\dropdown.robot">
-<test id="s1-t1" name="TC1" line="11">
-<kw name="Launch brow">
-<var>${pt}</var>
+<robot generator="Robot 6.0.1 (Python 3.10.7 on win32)" generated="20221219 14:41:25.418" rpa="false" schemaversion="3">
+<suite id="s1" name="My Register" source="C:\Users\jagatheswaran.m\PycharmProjects\RobotFramework\Testcase\my_register.robot">
+<test id="s1-t1" name="test1" line="10">
+<kw name="my browser" library="RegisterPOM">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url1}</arg>
-<arg>${broswe2}</arg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221219 13:16:17.565" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
-<status status="PASS" starttime="20221219 13:16:17.565" endtime="20221219 13:16:21.115"/>
+<msg timestamp="20221219 14:41:26.228" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/register.php'.</msg>
+<status status="PASS" starttime="20221219 14:41:26.228" endtime="20221219 14:41:33.857"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221219 13:16:21.116" endtime="20221219 13:16:21.247"/>
+<status status="PASS" starttime="20221219 14:41:33.859" endtime="20221219 14:41:34.005"/>
 </kw>
-<kw name="Get Title" library="SeleniumLibrary">
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20221219 13:16:21.261" level="INFO">${title} = nopCommerce demo store</msg>
-<status status="PASS" starttime="20221219 13:16:21.247" endtime="20221219 13:16:21.262"/>
+<status status="PASS" starttime="20221219 14:41:26.228" endtime="20221219 14:41:34.005"/>
 </kw>
-<msg timestamp="20221219 13:16:21.262" level="INFO">${pt} = nopCommerce demo store</msg>
-<status status="PASS" starttime="20221219 13:16:17.564" endtime="20221219 13:16:21.263"/>
+<kw name="Enter firstname" library="RegisterPOM">
+<arg>Jagathes</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Firstname}</arg>
+<arg>${my_firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:34.009" level="INFO">Typing text 'Jagathes' into text field 'name:firstName'.</msg>
+<status status="PASS" starttime="20221219 14:41:34.005" endtime="20221219 14:41:34.246"/>
 </kw>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${pt}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221219 13:16:21.263" endtime="20221219 13:16:21.263"/>
+<status status="PASS" starttime="20221219 14:41:34.005" endtime="20221219 14:41:34.247"/>
 </kw>
+<kw name="Enter lastname" library="RegisterPOM">
+<arg>M</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Lastname}</arg>
+<arg>${my_lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:34.249" level="INFO">Typing text 'M' into text field 'name:lastName'.</msg>
+<status status="PASS" starttime="20221219 14:41:34.248" endtime="20221219 14:41:34.445"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:34.247" endtime="20221219 14:41:34.445"/>
+</kw>
+<kw name="enter phone" library="RegisterPOM">
+<arg>909099090909</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${phone}</arg>
+<arg>${my_phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:34.450" level="INFO">Typing text '909099090909' into text field 'name:phone'.</msg>
+<status status="PASS" starttime="20221219 14:41:34.445" endtime="20221219 14:41:34.647"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:34.445" endtime="20221219 14:41:34.648"/>
+</kw>
+<kw name="Enter Email" library="RegisterPOM">
+<arg>Jaga@12.com</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Email}</arg>
+<arg>${my_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:34.648" level="INFO">Typing text 'Jaga@12.com' into text field 'name:userName'.</msg>
+<status status="PASS" starttime="20221219 14:41:34.648" endtime="20221219 14:41:34.878"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:34.648" endtime="20221219 14:41:34.878"/>
+</kw>
+<kw name="Enter Add" library="RegisterPOM">
+<arg>12,tatashowrom,erode</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Address}</arg>
+<arg>${my_addr}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:34.884" level="INFO">Typing text '12,tatashowrom,erode' into text field 'name:address1'.</msg>
+<status status="PASS" starttime="20221219 14:41:34.881" endtime="20221219 14:41:35.237"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:34.880" endtime="20221219 14:41:35.237"/>
+</kw>
+<kw name="Enter city" library="RegisterPOM">
+<arg>BLR</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${City}</arg>
+<arg>${my_city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:35.242" level="INFO">Typing text 'BLR' into text field 'name:city'.</msg>
+<status status="PASS" starttime="20221219 14:41:35.237" endtime="20221219 14:41:35.440"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:35.237" endtime="20221219 14:41:35.440"/>
+</kw>
+<kw name="Enter State" library="RegisterPOM">
+<arg>Karanataka</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${State}</arg>
+<arg>${my_state}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:35.443" level="INFO">Typing text 'Karanataka' into text field 'name:state'.</msg>
+<status status="PASS" starttime="20221219 14:41:35.443" endtime="20221219 14:41:35.638"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:35.442" endtime="20221219 14:41:35.638"/>
+</kw>
+<kw name="Enter postalcode" library="RegisterPOM">
+<arg>765767</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Postalcode}</arg>
+<arg>${my_postalcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:35.640" level="INFO">Typing text '765767' into text field 'name:postalCode'.</msg>
+<status status="PASS" starttime="20221219 14:41:35.640" endtime="20221219 14:41:35.826"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:35.639" endtime="20221219 14:41:35.827"/>
+</kw>
+<kw name="Enter country" library="RegisterPOM">
+<arg>INDIA</arg>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${Country}</arg>
+<arg>${my_country}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221219 14:41:35.828" level="INFO">Selecting options from selection list 'name:country' by value INDIA.</msg>
+<status status="PASS" starttime="20221219 14:41:35.828" endtime="20221219 14:41:35.994"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:35.828" endtime="20221219 14:41:35.995"/>
+</kw>
+<kw name="Enter username" library="RegisterPOM">
+<arg>Jags</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Username}</arg>
+<arg>${my_username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:35.995" level="INFO">Typing text 'Jags' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20221219 14:41:35.995" endtime="20221219 14:41:36.171"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:35.995" endtime="20221219 14:41:36.171"/>
+</kw>
+<kw name="Enter password" library="RegisterPOM">
+<arg>Jagathemax123332</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password}</arg>
+<arg>${my_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:36.171" level="INFO">Typing text 'Jagathemax123332' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20221219 14:41:36.171" endtime="20221219 14:41:36.387"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:36.171" endtime="20221219 14:41:36.387"/>
+</kw>
+<kw name="Enter confirmpassword" library="RegisterPOM">
+<arg>Jagathemax123332</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ConfirmationPassword}</arg>
+<arg>${my_confirmpassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221219 14:41:36.387" level="INFO">Typing text 'Jagathemax123332' into text field 'name:confirmPassword'.</msg>
+<status status="PASS" starttime="20221219 14:41:36.387" endtime="20221219 14:41:36.578"/>
+</kw>
+<status status="PASS" starttime="20221219 14:41:36.387" endtime="20221219 14:41:36.579"/>
+</kw>
+<kw name="Enter submit" library="RegisterPOM">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath://a[@class='ico-login']</arg>
+<arg>${Submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221219 13:16:21.263" level="INFO">Clicking element 'xpath://a[@class='ico-login']'.</msg>
-<status status="PASS" starttime="20221219 13:16:21.263" endtime="20221219 13:16:22.969"/>
+<msg timestamp="20221219 14:41:36.581" level="INFO">Clicking element 'submit'.</msg>
+<status status="PASS" starttime="20221219 14:41:36.580" endtime="20221219 14:41:39.691"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:Email</arg>
-<arg>Jaga</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:16:22.969" level="INFO">Typing text 'Jaga' into text field 'name:Email'.</msg>
-<status status="PASS" starttime="20221219 13:16:22.969" endtime="20221219 13:16:23.211"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221219 14:41:39.692" endtime="20221219 14:41:41.905"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>name:Password</arg>
-<arg>tesing12</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221219 13:16:23.212" level="INFO">Typing text 'tesing12' into text field 'name:Password'.</msg>
-<status status="PASS" starttime="20221219 13:16:23.211" endtime="20221219 13:16:23.420"/>
+<status status="PASS" starttime="20221219 14:41:36.579" endtime="20221219 14:41:41.906"/>
 </kw>
-<status status="PASS" starttime="20221219 13:16:17.564" endtime="20221219 13:16:23.422"/>
+<status status="PASS" starttime="20221219 14:41:26.226" endtime="20221219 14:41:41.907"/>
 </test>
-<status status="PASS" starttime="20221219 13:16:17.232" endtime="20221219 13:16:23.423"/>
+<status status="PASS" starttime="20221219 14:41:25.422" endtime="20221219 14:41:41.910"/>
 </suite>
 <statistics>
 <total>
@@ -62,7 +174,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Dropdown">Dropdown</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="My Register">My Register</stat>
 </suite>
 </statistics>
 <errors>
