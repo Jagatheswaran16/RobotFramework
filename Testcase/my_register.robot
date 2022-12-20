@@ -4,6 +4,7 @@ Resource    ../Register/RegisterPOM.robot
 
 *** Variables ***
 ${url}   https://demo.guru99.com/test/newtours/register.php
+
 ${browser}      chrome
 
 *** Test Cases ***

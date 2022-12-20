@@ -7,10 +7,13 @@ ${browser}    chrome
 
 *** Test Cases ***
 scrolling
-    open browser    ${url}  ${browser}
+    open browser    ${url}   ${browser}
     maximize browser window
-    @{name1}    get all links   xpath://a
-    log to console    @{name1}
+    click element    xpath://a[@data-pid='2']
+    input text    xpath://input[@class='gLFyf']     laptop
+    click element    xpath://div[@class='zgAlFc']/span
+
+    close browser
 
 
 *** Keywords ***
