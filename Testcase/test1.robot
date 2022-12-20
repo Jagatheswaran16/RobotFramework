@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${url}  https://www.google.co.in
+${url}  https://www.google.co.in/
 ${browser}    chrome
 
 *** Test Cases ***
