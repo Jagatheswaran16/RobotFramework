@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${url}  https://demo.nopcommerce.com
-${browser}    chrome
+${browser}    edge
 
 
 *** Test Cases ***

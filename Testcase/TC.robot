@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${browser}  chrome
+${browser}  edge
 ${url}  https://demo.nopcommerce.com
 ${email}    xpath://input[@type='email']
 ${pass}    xpath://input[@class='password']
@@ -27,4 +27,4 @@ Login
         input text      ${email}  pavanoltraining@gmail.com
         input text      ${pass}     Test@123
         sleep    2
-        click element    ${login}
+        click element    xpath://button[@class='button-1 login-button']

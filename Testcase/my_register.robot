@@ -3,9 +3,9 @@ Library    SeleniumLibrary
 Resource    ../Register/RegisterPOM.robot
 
 *** Variables ***
-${url}   https://demo.guru99.com/test/newtours/register.php
+${url}      https://demo.guru99.com/test/newtours/register.php
 
-${browser}      chrome
+${browser}        edge
 
 *** Test Cases ***
 test1
